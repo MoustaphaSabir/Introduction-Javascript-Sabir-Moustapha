@@ -1,3 +1,3 @@
-let user = prompt(`votre nom d'utilisateur `)
+let user = prompt(`Quel est votre nom ? `)
 
 alert("Bonjour " + user + " !");
