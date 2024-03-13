@@ -7,8 +7,9 @@
 </head>
 <body>
     <script>
-        let motDePass = parseInt(prompt("Entrez votre passe svp!"))
-        // let motDePasss = 1234567891015;
+        let motDePass = prompt("Entrez votre passe svp!")
+        console.log(motDePass.length);
+        // let longuerMotDepasse = motDePass;
 
         if (motDePass.length >= 5 && motDePass.length <= 12) {
             alert("Mot de passe valide");
