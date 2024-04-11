@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 6</title>
+</head>
+<body>
+    <script>
+                let mots = [
+            "arbre", 
+            "soleil", 
+            "lumière", 
+            "pomme", 
+            "ordinateur", 
+            "livre", 
+            "bouteille", 
+            "téléphone", 
+            "fenêtre", 
+            "chaise", 
+            "table", 
+            "voiture", 
+            "ciel", 
+            "eau", 
+            "ordinateur", 
+            "souris", 
+            "clavier", 
+            "écran", 
+            "lampe", 
+            "bureau"
+        ];
+            let petitsMots = [];
+            let grandsMots = [];
+
+            for (let mot of mots) {
+            if (mot.length < 7) {
+                petitsMots.push(mot);      
+           } else {
+            grandsMots.push(mot); 
+           }
+        }
+        console.log(`Le nombre des petis mots : ${petitsMots.length}`);
+        console.table(petitsMots);
+        console.log(`Le nombre des grands mots : ${grandsMots.length}`);
+        console.table(grandsMots);
+    
+    
+    </script>
+</body>
+</html>
