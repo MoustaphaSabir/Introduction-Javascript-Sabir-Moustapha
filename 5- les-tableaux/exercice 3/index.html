@@ -7,17 +7,12 @@
 </head>
 <body>
     <script>
-        const semaine =['Lundi','Mardi','Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+        let semaine =['Lundi','Mardi','Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
         console.table(semaine);
 
-        for (let index = 0; index <= semaine.length ; index++) {
-            console.log(`Le jour 1 de la semaine est ${semaine[0]}`);
-            console.log(`Le jour 2 de la semaine est ${semaine[1]}`);
-            console.log(`Le jour 3 de la semaine est ${semaine[2]}`);
-            console.log(`Le jour 4 de la semaine est ${semaine[3]}`);
-            console.log(`Le jour 5 de la semaine est ${semaine[4]}`);
-            console.log(`Le jour 6 de la semaine est ${semaine[5]}`);
-            console.log(`Le jour 7 de la semaine est ${semaine[6]}`);
+        for (let i= 0;  i< semaine.length; i++) {
+            console.log("Le jour " + (i + 1) + " de la semaine est " + semaine[i]);
+
         }
         
     </script>
