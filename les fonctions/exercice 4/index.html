@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 4</title>
+</head>
+<body>
+    <script>
+            //Créez un fonction qui demande une confirmation à l’utilisateur(confirm()) avec le message :
+            //  “Avez vous les droits pour accéder aux codes nucléaires ? Soyez honnête s’il vous plait,
+            //  cela peut être dangereux.”. 
+            // Si l’utilisateur accepte, afficher une alerte avec le code de votre choix (ex : 1234). 
+            // Sinon affichez “vous n’avez pas les droits !!”.
+
+            function confirmationAcce() {
+                let confirmation = confirm(`Avez vous les droits pour accéder aux codes nucléaires ? Soyez honnête s’il vous plait,
+                            cela peut être dangereux.`)
+                            if (confirmationAcce) {
+                                alert("Code nucléaire : 1111");
+                            }else{
+                                alert("“vous n’avez pas les droits !!”")
+                            }
+                
+            }
+            confirmationAcce();
+
+
+    </script>
+</body>
+</html>
