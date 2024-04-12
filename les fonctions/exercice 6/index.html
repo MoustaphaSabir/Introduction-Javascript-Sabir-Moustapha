@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 6</title>
+</head>
+<body>
+    <script>
+            // Créez quatre fonctions distinctes pour l'addition, 
+            // la soustraction, la multiplication et la division. 
+            // Chaque fonction doit vérifier si les arguments a et b sont bien définis et sont des nombres;
+            // si ce n'est pas le cas, retournez "paramètres incorrects". Sinon,
+            // effectuez l'opération correspondante et retournez le résultat.
+          
+            function addition(a, b) {
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                    return "Paramètres incorrects";
+                }else{
+                    return a + b;
+                }
+            }
+            let resultatAddition = addition('53','5')
+            console.log(`Resultat de l'addition : ${resultatAddition}`);
+
+                // Soustraction
+            function soustraction(a, b) {
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                    return "Paramètres incorrects";
+                }else{
+                    return a - b;
+                }
+            }
+            let resultatSoustraction = soustraction(5,4)
+            console.log(`Resultat de soustraction : ${resultatSoustraction}`);
+
+            // Multiplication
+            function multiplication(a, b) {
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                    return "Paramètres incorrects";
+                }else{
+                    return a * b;
+                }
+            }
+            let resultatmultiplication = multiplication(5,4)
+            console.log(`Resultat de soustraction : ${resultatmultiplication}`);
+
+            //Division
+            function division(a, b) {
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                    return "Paramètres incorrects";
+                }else{
+                    return a/b;
+                }
+            }
+            let resultatdivision = division(5,4)
+            console.log(`Resultat de soustraction : ${resultatdivision}`);
+
+    </script>
+</body>
+</html>
