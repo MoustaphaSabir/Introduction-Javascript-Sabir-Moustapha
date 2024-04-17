@@ -10,7 +10,31 @@
         // Créez une fonction qui prend deux mots en paramètre et vérifie s'ils sont des anagrammes,
         // c'est-à-dire s'ils contiennent les mêmes lettres dans un ordre différent. 
         // La fonction doit retourner un booléen : true si les mots sont des anagrammes, false sinon.
+        // mot1 = "gare"
+        // mot2 = "rage"
         
+        function sontAnagrammes(mot1 , mot2) {
+            mot1 = mot1.split("");
+            mot1.sort();
+            mot1 = mot1.join("");
+
+            mot2 = mot2.split("");
+            mot2.sort();
+            mot2 = mot2.join("");
+            if (mot1===mot2) {
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+        console.log(sontAnagrammes("gare", "rage"));
+        console.log(sontAnagrammes("chien", "niche"));
+        console.log(sontAnagrammes("gare", "rom"));
+        
+
+
+
     </script>
 </body>
 </html>
