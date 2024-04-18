@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 1</title>
+</head>
+<body>
+    <header>
+    </header>
+    <footer>
+        dhheeheh
+    </footer>
+   
+        <!-- Dans votre HTML :
+        1 - creer un header (element HTML)
+          - creer un element footer (element HTML)
+         
+        Dans votre Javascript :
+        2 - creer un element html h1
+        3 - modifier la taille de votre h1 (50px)
+        4 - changer la couleur du h1 
+        5 - Ajouter un texte dans votre h1
+        6 - Ajouter votre element H1 => dans votre element Header
+        7 - Supprimer votre element footer -->
+    <script>
+        let elementH1 = document.createElement('h1');
+        elementH1.style.fontSize = "50px";
+        elementH1.style.color = "blue";
+        elementH1.innerText = "Hello world";
+
+        let elementHeader = document.querySelector('header');
+         elementHeader.appendChild(elementH1);
+        
+        
+        let elementFooter = document.querySelector('footer');
+        elementFooter.remove();
+     
+    </script>
+</body>
+</html>
