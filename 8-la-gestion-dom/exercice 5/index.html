@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 5</title>
+</head>
+<body>
+    <div>
+        <img src="image/eugenivy-unsplash.jpg" alt="nature">
+    </div>
+    <script>
+        // Affichez une image sur votre page. Ajoutez un évènement pour qu’au survol de cette image, 
+        // elle devienne floue. (faite le bien en javascript, pas avec un :hover
+         
+        let iamgeFlou = document.querySelector('img');
+
+        iamgeFlou.addEventListener('mouseenter', function() {
+
+            iamgeFlou.style.filter = 'blur(20px)'; 
+        });
+
+        // iamgeFlou.addEventListener('mouseenter', function() {
+
+        // //     iamgeFlou.style.remove = 'blur(20px)'; 
+        // });mouseout
+
+        iamgeFlou.addEventListener('mouseout', function() {
+
+        iamgeFlou.style = 'blur(20px)'; 
+        });
+
+        // document.body.appendChild(iamgeFlou); 
+
+    </script>
+</body>
+</html>

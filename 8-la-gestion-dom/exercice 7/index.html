@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 7</title>
+</head>
+<body>
+    <!-- Créez un liste de tâches en html. 
+    1 - Selectionner tous les les éléments li et appliquez leur une couleur darkblue
+    2 - Rajoutez des évènements pour que lorsqu’on clic sur une tâche, celle ci se raye. -->
+    <ul>
+        <li>Tache 1</li>
+        <li>Tache 2</li>
+        <li>Tache 3</li>
+        <li>Tache 4</li>
+        <li>Tache 5</li>
+    </ul>   
+
+    <script>
+       let listeTaches = document.querySelectorAll('li')
+        // console.log(listeTache);
+        for (let listeTache of listeTaches) {
+            listeTache.style.color = "darkblue";
+        }
+
+    </script>
+  
+</body>
+</html>
