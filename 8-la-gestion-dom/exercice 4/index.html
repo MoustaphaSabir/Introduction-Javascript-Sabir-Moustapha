@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 4</title>
+</head>
+<body>
+    <!-- Créez un fonction createTag(tagName, content),
+     qui prend en paramètre un nom de balise,
+     et un contenu. Cette retourne un élément html.
+    Testez votre fonction pour créer des éléments et les ajouter au DOM. -->
+    <script>
+        function createTag(tagName, content) {
+            const element = document.createElement(tagName); 
+            element.innerText = content;
+            return element;
+        }
+
+     const nouvelleDiv = createTag('div', 'bonjour le monde');
+
+    console.log(nouvelleDiv);
+    const paragraphe = createTag('p', 'lorem imps')
+    console.log(paragraphe);
+
+    document.body.appendChild(nouvelleDiv); 
+
+
+
+
+    </script>
+</body>
+</html>
