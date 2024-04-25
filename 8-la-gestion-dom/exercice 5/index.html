@@ -14,8 +14,8 @@
         // elle devienne floue. (faite le bien en javascript, pas avec un :hover
          
         let iamgeFlou = document.querySelector('img');
-
-        iamgeFlou.addEventListener('mouseenter', function() {
+        // Quand je survole de mon image
+        iamgeFlou.addEventListener('mouseover', function() {
 
             iamgeFlou.style.filter = 'blur(20px)'; 
         });
@@ -24,10 +24,10 @@
 
         // //     iamgeFlou.style.remove = 'blur(20px)'; 
         // });mouseout
-
+            // Quand je sors de mon image
         iamgeFlou.addEventListener('mouseout', function() {
 
-        iamgeFlou.style = 'blur(20px)'; 
+            iamgeFlou.style.filter = 'none'; 
         });
 
         // document.body.appendChild(iamgeFlou); 
