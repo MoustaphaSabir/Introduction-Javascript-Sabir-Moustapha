@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercice 7</title>
+    <style>
+        .raye{
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
     <!-- Créez un liste de tâches en html. 
@@ -19,10 +24,21 @@
 
     <script>
        let listeTaches = document.querySelectorAll('li')
-        // console.log(listeTache);
+        
+
         for (let listeTache of listeTaches) {
             listeTache.style.color = "darkblue";
-        }
+            listeTache.addEventListener("click", function() {
+                // listeTache.style.textDecoration='line-through'
+                // si ma classe raye alors il enleve 
+                // si non il l'ajoute
+                listeTache.classList.toggle('.raye')
+            }
+         )}
+         
+         
+      
+      
 
     </script>
   
